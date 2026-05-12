@@ -80,12 +80,8 @@
         </div>
     </div>
 
-    <div class="flower animate-fall" style="left: 15%;"><i class="fa fa-heart"></i></div>
-    <div class="flower animate-fall" style="left: 45%; animation-delay: 3s;"><i class="fa fa-heart"></i></div>
-    <div class="flower animate-fall" style="left: 80%; animation-delay: 6s;"><i class="fa fa-leaf"></i></div>
-
     <audio id="bgMusic" loop preload="auto">
-        <source src="https://raw.githubusercontent.com/ikhsanasri01/undangan-fany-wawan./main/musik.mp3" type="audio/mpeg">
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
     </audio>
 
     <div id="musicBtn" class="fixed bottom-8 right-8 z-50 bg-white/90 border border-gold p-4 rounded-full shadow-xl cursor-pointer hover:bg-gold hover:text-white transition-all hidden">
@@ -129,34 +125,13 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-4 mb-12">
-                    <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50" data-aos="flip-left">
+                    <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50">
                         <h3 class="font-playfair font-bold text-lg text-darkGold mb-1">Akad Nikah</h3>
                         <p class="text-xs">08.00 WIB - Selesai</p>
-                        <p class="text-[10px] italic mt-2 text-gray-500">Kediaman Mempelai Wanita</p>
                     </div>
-                    <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50" data-aos="flip-right">
+                    <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50">
                         <h3 class="font-playfair font-bold text-lg text-darkGold mb-1">Resepsi</h3>
                         <p class="text-xs">10.00 WIB - Selesai</p>
-                        <p class="text-[10px] italic mt-2 text-gray-500">Kediaman Mempelai Wanita</p>
-                    </div>
-                </div>
-
-                <div class="flex justify-center gap-3 mb-12 text-white" data-aos="fade-up">
-                    <div class="w-16 h-16 flex flex-col justify-center bg-darkGold rounded-2xl shadow-lg">
-                        <span id="hari" class="text-xl font-bold leading-none">00</span>
-                        <span class="text-[7px] uppercase mt-1">Hari</span>
-                    </div>
-                    <div class="w-16 h-16 flex flex-col justify-center bg-darkGold rounded-2xl shadow-lg">
-                        <span id="jam" class="text-xl font-bold leading-none">00</span>
-                        <span class="text-[7px] uppercase mt-1">Jam</span>
-                    </div>
-                    <div class="w-16 h-16 flex flex-col justify-center bg-darkGold rounded-2xl shadow-lg">
-                        <span id="menit" class="text-xl font-bold leading-none">00</span>
-                        <span class="text-[7px] uppercase mt-1">Menit</span>
-                    </div>
-                    <div class="w-16 h-16 flex flex-col justify-center bg-darkGold rounded-2xl shadow-lg">
-                        <span id="detik" class="text-xl font-bold leading-none">00</span>
-                        <span class="text-[7px] uppercase mt-1">Detik</span>
                     </div>
                 </div>
 
@@ -165,44 +140,10 @@
                 </a>
             </div>
         </div>
-
-        <div class="max-w-4xl mx-auto mb-24 px-4" data-aos="fade-up">
-            <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-gold/20">
-                <h2 class="font-cursive text-4xl text-center text-darkGold mb-8">Ucapan & Doa Restu</h2>
-                <form id="wishForm" class="space-y-4">
-                    <input type="text" id="nameInput" placeholder="Nama Anda" class="w-full p-4 rounded-2xl bg-cream border border-gold/20 focus:ring-1 focus:ring-gold outline-none text-xs" required>
-                    <textarea id="wishInput" placeholder="Tuliskan ucapan..." rows="3" class="w-full p-4 rounded-2xl bg-cream border border-gold/20 focus:ring-1 focus:ring-gold outline-none text-xs" required></textarea>
-                    <button type="submit" class="w-full bg-darkGold text-white py-4 rounded-2xl font-bold hover:bg-gold transition-all text-[10px] tracking-widest">KIRIM UCAPAN</button>
-                </form>
-                <div id="wishList" class="mt-10 space-y-4 max-h-[300px] overflow-y-auto">
-                    <div class="bg-cream p-4 rounded-2xl border-l-4 border-gold">
-                        <p class="font-bold text-darkGold text-xs">Fany & Wawan</p>
-                        <p class="text-[10px] text-gray-600 mt-1">Terima kasih atas doa dan dukungannya.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
-
-    <div id="modalAmplop" class="fixed inset-0 z-[120] hidden flex items-center justify-center px-4">
-        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeModal()"></div>
-        <div class="bg-white rounded-[2rem] w-full max-w-xs p-8 relative z-10 border-4 border-double border-gold/30 shadow-2xl text-center">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gold"><i class="fa fa-times text-xl"></i></button>
-            <i class="fa fa-gift text-darkGold text-4xl mb-4"></i>
-            <h3 class="font-playfair text-2xl text-darkGold mb-6 uppercase font-bold tracking-widest">Amplop Digital</h3>
-            <div class="bg-cream border border-gold/20 rounded-2xl p-6">
-                <p class="text-[10px] text-darkGold font-bold tracking-widest mb-1">BANK BRI</p>
-                <p class="text-lg font-bold text-gray-800">069401030950507</p>
-                <p class="text-[10px] text-gray-500 mb-4">a.n Rexy Setiawan</p>
-                <button onclick="copyRekening()" class="bg-darkGold text-white px-6 py-2 rounded-full text-[9px] font-bold uppercase">Salin Rekening</button>
-                <p id="copyMsg" class="text-[8px] text-green-600 font-bold mt-2 hidden italic">BERHASIL DISALIN!</p>
-            </div>
-        </div>
-    </div>
 
     <script>
         AOS.init({ duration: 1200, once: true });
-
         let isPlaying = false;
         const music = document.getElementById('bgMusic');
 
@@ -217,68 +158,34 @@
                 document.getElementById('giftBtn').classList.remove('hidden');
             }, 1000);
 
-            // PUTAR MUSIK DENGAN PENANGANAN ERROR
+            // PUTAR MUSIK SECARA MANUAL
             if (music) {
                 music.play().then(() => {
                     isPlaying = true;
                     document.getElementById('musicIcon').className = 'fa fa-pause';
                 }).catch(e => {
-                    // JIKA AUTOPLAY DIBLOKIR BROWSER
-                    const forcePlay = () => {
-                        music.play();
-                        isPlaying = true;
-                        document.getElementById('musicIcon').className = 'fa fa-pause';
-                        document.removeEventListener('click', forcePlay);
-                    };
-                    document.addEventListener('click', forcePlay);
+                    // JIKA GAGAL, TUNGGU KLIK SELANJUTNYA
+                    document.addEventListener('click', () => {
+                        if(!isPlaying) {
+                            music.play();
+                            isPlaying = true;
+                            document.getElementById('musicIcon').className = 'fa fa-pause';
+                        }
+                    }, { once: true });
                 });
             }
         }
 
-        const urlParams = new URLSearchParams(window.location.search);
-        const guest = urlParams.get('to');
-        if (guest) document.getElementById('guestName').innerText = guest.replace(/\+/g, ' ');
-
-        document.getElementById('musicBtn').addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (isPlaying) { music.pause(); document.getElementById('musicIcon').className = 'fa fa-music'; }
-            else { music.play(); document.getElementById('musicIcon').className = 'fa fa-pause'; }
+        document.getElementById('musicBtn').addEventListener('click', () => {
+            if (isPlaying) { 
+                music.pause(); 
+                document.getElementById('musicIcon').className = 'fa fa-music'; 
+            } else { 
+                music.play(); 
+                document.getElementById('musicIcon').className = 'fa fa-pause'; 
+            }
             isPlaying = !isPlaying;
         });
-
-        document.getElementById('wishForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('nameInput').value;
-            const wish = document.getElementById('wishInput').value;
-            const newWish = `<div class="bg-cream p-4 rounded-2xl border-l-4 border-gold shadow-sm animate-pulse">
-                <p class="font-bold text-darkGold text-xs">${name}</p>
-                <p class="text-[10px] text-gray-600 mt-1">${wish}</p>
-            </div>`;
-            document.getElementById('wishList').insertAdjacentHTML('afterbegin', newWish);
-            document.getElementById('wishForm').reset();
-        });
-
-        document.getElementById('giftBtn').addEventListener('click', () => document.getElementById('modalAmplop').classList.remove('hidden'));
-        function closeModal() { document.getElementById('modalAmplop').classList.add('hidden'); }
-        function copyRekening() {
-            navigator.clipboard.writeText("069401030950507").then(() => {
-                const msg = document.getElementById('copyMsg');
-                msg.classList.remove('hidden');
-                setTimeout(() => msg.classList.add('hidden'), 2000);
-            });
-        }
-
-        const target = new Date("July 11, 2026 08:00:00").getTime();
-        setInterval(() => {
-            const now = new Date().getTime();
-            const diff = target - now;
-            if (diff > 0) {
-                document.getElementById("hari").innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-                document.getElementById("jam").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
-                document.getElementById("menit").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
-                document.getElementById("detik").innerText = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
-            }
-        }, 1000);
     </script>
 </body>
 </html>

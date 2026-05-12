@@ -85,7 +85,7 @@
     <div class="flower animate-fall" style="left: 80%; animation-delay: 6s;"><i class="fa fa-leaf"></i></div>
 
     <audio id="bgMusic" loop preload="auto">
-        <source src="musik.mp3" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/ikhsanasri01/undangan-fany-wawan./main/musik.mp3" type="audio/mpeg">
     </audio>
 
     <div id="musicBtn" class="fixed bottom-8 right-8 z-50 bg-white/90 border border-gold p-4 rounded-full shadow-xl cursor-pointer hover:bg-gold hover:text-white transition-all hidden">
@@ -97,7 +97,6 @@
     </div>
 
     <main class="container mx-auto px-4 py-12 relative z-10">
-        
         <div class="text-center mb-16" data-aos="fade-up">
             <div class="flex justify-center mb-8 opacity-40">
                 <img src="https://www.svgrepo.com/show/154705/floral-divider.svg" class="w-64 filter sepia">
@@ -111,19 +110,12 @@
                     <div class="relative z-10 overflow-hidden rounded-[3rem] border-4 border-white shadow-2xl rotate-2 transition-transform duration-500 aspect-[3/4]">
                         <img src="https://i.ibb.co.com/xSLckyDv/Whats-App-Image-2026-05-12-at-07-56-25.jpg" alt="Fany & Wawan" class="w-full h-full object-cover">
                     </div>
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-gold/10 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-darkGold/10 rounded-full blur-3xl"></div>
                 </div>
             </div>
         </div>
 
         <div class="max-w-4xl mx-auto glass-card shadow-xl rounded-[3rem] overflow-hidden border border-gold/20 mb-24" data-aos="fade-up">
-            <div class="p-8 md:p-16 text-center bg-[url('https://www.transparenttextures.com/patterns/fancy-pants.png')]">
-                <div class="mb-10 text-gray-700 italic font-playfair leading-relaxed text-sm" data-aos="fade-up">
-                    <i class="fa fa-quote-left text-gold/30 text-2xl mb-4 block"></i>
-                    "Menemukan seseorang yang mencintaimu apa adanya adalah keberuntungan, namun membangun kehidupan bersama adalah ibadah terindah."
-                </div>
-
+            <div class="p-8 md:p-16 text-center">
                 <div class="flex flex-col gap-6 mb-12">
                     <div data-aos="fade-right">
                         <h2 class="font-cursive text-4xl text-darkGold">Nabila Iffany Ritonga</h2>
@@ -168,38 +160,9 @@
                     </div>
                 </div>
 
-                <a href="https://maps.app.goo.gl/YdPj6x5jnvwZkg8w8?g_st=ic" target="_blank" class="inline-block bg-darkGold text-white px-10 py-3 rounded-full hover:bg-gold shadow-lg transition-all text-xs font-bold tracking-widest">
+                <a href="https://maps.google.com" target="_blank" class="inline-block bg-darkGold text-white px-10 py-3 rounded-full hover:bg-gold shadow-lg transition-all text-xs font-bold tracking-widest">
                     <i class="fa fa-map-marker mr-2"></i> PETUNJUK LOKASI
                 </a>
-            </div>
-        </div>
-
-        <div class="max-w-5xl mx-auto mb-24 px-4">
-            <h2 class="font-cursive text-5xl text-center text-darkGold mb-8" data-aos="fade-up">Our Love Story</h2>
-            <div class="relative timeline-container">
-                <div class="mb-12 flex justify-between items-center w-full md:flex-row flex-row-reverse" data-aos="fade-right">
-                    <div class="hidden md:block w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-darkGold shadow-xl w-10 h-10 rounded-full border-4 border-white">
-                        <i class="fa fa-star mx-auto text-white text-[10px]"></i>
-                    </div>
-                    <div class="order-1 bg-white rounded-2xl shadow-lg w-10/12 md:w-5/12 px-6 py-8 border-t-4 border-gold">
-                        <h3 class="mb-2 font-bold font-playfair text-darkGold text-lg uppercase tracking-wider">Awal Pertemuan</h3>
-                        <p class="text-xs leading-relaxed text-gray-600 italic">"Semesta mempertemukan kami di sebuah momen yang tak terduga. Tatapan pertama yang menjadi awal dari ribuan percakapan hebat."</p>
-                        <div class="mt-4 text-[9px] font-bold text-gold uppercase tracking-widest">Januari 2022</div>
-                    </div>
-                </div>
-
-                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full" data-aos="fade-left">
-                    <div class="hidden md:block w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-darkGold shadow-xl w-10 h-10 rounded-full border-4 border-white">
-                        <i class="fa fa-diamond mx-auto text-white text-[10px]"></i>
-                    </div>
-                    <div class="order-1 bg-white rounded-2xl shadow-lg w-10/12 md:w-5/12 px-6 py-8 border-t-4 border-gold md:text-right">
-                        <h3 class="mb-2 font-bold font-playfair text-darkGold text-lg uppercase tracking-wider">Ikatan Janji</h3>
-                        <p class="text-xs leading-relaxed text-gray-600 italic">"Di hadapan keluarga, kami memutuskan untuk saling mengikat janji. Sebuah langkah berani untuk membangun masa depan bersama."</p>
-                        <div class="mt-4 text-[9px] font-bold text-gold uppercase tracking-widest">03 November 2024</div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -238,14 +201,12 @@
     </div>
 
     <script>
-        // INISIALISASI ANIMASI
         AOS.init({ duration: 1200, once: true });
 
         let isPlaying = false;
         const music = document.getElementById('bgMusic');
 
         function openInvitation() {
-            // Animasi transisi buka undangan
             document.getElementById('overlayer').style.transform = 'translateY(-100%)';
             document.getElementById('overlayer').style.opacity = '0';
             
@@ -256,14 +217,13 @@
                 document.getElementById('giftBtn').classList.remove('hidden');
             }, 1000);
 
-            // LOGIKA PUTAR MUSIK DENGAN FORCE PLAY
+            // PUTAR MUSIK DENGAN PENANGANAN ERROR
             if (music) {
                 music.play().then(() => {
                     isPlaying = true;
                     document.getElementById('musicIcon').className = 'fa fa-pause';
-                }).catch(error => {
-                    console.log("Autoplay diblokir, menunggu interaksi pertama.");
-                    // Jika gagal (diblokir browser), musik akan jalan saat layar disentuh pertama kali
+                }).catch(e => {
+                    // JIKA AUTOPLAY DIBLOKIR BROWSER
                     const forcePlay = () => {
                         music.play();
                         isPlaying = true;
@@ -275,25 +235,17 @@
             }
         }
 
-        // Ambil Nama Tamu
         const urlParams = new URLSearchParams(window.location.search);
         const guest = urlParams.get('to');
         if (guest) document.getElementById('guestName').innerText = guest.replace(/\+/g, ' ');
 
-        // Kontrol Musik
         document.getElementById('musicBtn').addEventListener('click', (e) => {
-            e.stopPropagation(); // Mencegah bentrok dengan force play
-            if (isPlaying) { 
-                music.pause(); 
-                document.getElementById('musicIcon').className = 'fa fa-music'; 
-            } else { 
-                music.play(); 
-                document.getElementById('musicIcon').className = 'fa fa-pause'; 
-            }
+            e.stopPropagation();
+            if (isPlaying) { music.pause(); document.getElementById('musicIcon').className = 'fa fa-music'; }
+            else { music.play(); document.getElementById('musicIcon').className = 'fa fa-pause'; }
             isPlaying = !isPlaying;
         });
 
-        // Guestbook
         document.getElementById('wishForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const name = document.getElementById('nameInput').value;
@@ -316,7 +268,6 @@
             });
         }
 
-        // Countdown
         const target = new Date("July 11, 2026 08:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();

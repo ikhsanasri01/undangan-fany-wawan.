@@ -114,7 +114,7 @@
             </div>
         </div>
 
-        <div class="max-w-4xl mx-auto glass-card shadow-xl rounded-[3rem] overflow-hidden border border-gold/20 mb-24" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto glass-card shadow-xl rounded-[3rem] border border-gold/20 mb-24" data-aos="fade-up">
             <div class="p-8 md:p-16 text-center">
                 <div class="flex flex-col gap-6 mb-12">
                     <div data-aos="fade-right">
@@ -132,12 +132,10 @@
                     <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50" data-aos="flip-left">
                         <h3 class="font-playfair font-bold text-lg text-darkGold mb-1">Akad Nikah</h3>
                         <p class="text-xs text-gray-600">08.00 WIB - Selesai</p>
-                        <p class="text-[10px] italic mt-2 text-gray-400">Kediaman Mempelai Wanita</p>
                     </div>
                     <div class="p-6 border border-gold/10 rounded-2xl bg-cream/50" data-aos="flip-right">
                         <h3 class="font-playfair font-bold text-lg text-darkGold mb-1">Resepsi</h3>
                         <p class="text-xs text-gray-600">10.00 WIB - Selesai</p>
-                        <p class="text-[10px] italic mt-2 text-gray-400">Kediaman Mempelai Wanita</p>
                     </div>
                 </div>
 
@@ -163,35 +161,6 @@
                 <a href="https://maps.google.com" target="_blank" class="inline-block bg-darkGold text-white px-8 py-3 rounded-full hover:bg-gold shadow-lg transition-all text-[10px] font-bold tracking-widest">
                     <i class="fa fa-map-marker mr-2"></i> PETUNJUK LOKASI
                 </a>
-            </div>
-        </div>
-
-        <div class="max-w-5xl mx-auto mb-24 px-4">
-            <h2 class="font-cursive text-5xl text-center text-darkGold mb-8" data-aos="fade-up">Our Love Story</h2>
-            <div class="relative timeline-container">
-                <div class="mb-12 flex justify-between items-center w-full md:flex-row flex-row-reverse" data-aos="fade-right">
-                    <div class="hidden md:block w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-darkGold shadow-xl w-8 h-8 rounded-full border-4 border-white">
-                        <i class="fa fa-star mx-auto text-white text-[8px]"></i>
-                    </div>
-                    <div class="order-1 bg-white rounded-2xl shadow-lg w-10/12 md:w-5/12 px-6 py-8 border-t-4 border-gold">
-                        <h3 class="mb-2 font-bold font-playfair text-darkGold text-md uppercase">Awal Pertemuan</h3>
-                        <p class="text-[11px] leading-relaxed text-gray-500 italic">"Semesta mempertemukan kami di momen yang tak terduga Hingga akhirnya pada 03 November 2024 membawa kami kesebuah ikatan yg diridhoi-nya."</p>
-                        <div class="mt-4 text-[9px] font-bold text-gold uppercase tracking-widest">Januari 2022</div>
-                    </div>
-                </div>
-
-                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full" data-aos="fade-left">
-                    <div class="hidden md:block w-5/12"></div>
-                    <div class="z-20 flex items-center order-1 bg-darkGold shadow-xl w-8 h-8 rounded-full border-4 border-white">
-                        <i class="fa fa-diamond mx-auto text-white text-[8px]"></i>
-                    </div>
-                    <div class="order-1 bg-white rounded-2xl shadow-lg w-10/12 md:w-5/12 px-6 py-8 border-t-4 border-gold md:text-right">
-                        <h3 class="mb-2 font-bold font-playfair text-darkGold text-md uppercase">Ikatan Janji</h3>
-                        <p class="text-[11px] leading-relaxed text-gray-500 italic">"Melangkah berani membangun masa depan bersama."</p>
-                        <div class="mt-4 text-[9px] font-bold text-gold uppercase tracking-widest">11 July 2026</div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -223,52 +192,68 @@
                 <p class="text-[10px] text-darkGold font-bold tracking-widest mb-1">BANK BRI</p>
                 <p class="text-lg font-bold text-gray-800">069401030950507</p>
                 <p class="text-[10px] text-gray-500 mb-4">a.n Rexy Setiawan</p>
-                 <button onclick="copyRekening()" class="bg-darkGold text-white px-6 py-2 rounded-full text-[9px] font-bold uppercase">Salin Rekening</button>
-                <p id="copyMsg" class="text-[8px] text-green-600 font-bold mt-2 hidden italic">BERHASIL DISALIN!</p>
+                <button onclick="copyRekening('069401030950507')" class="bg-darkGold text-white px-6 py-2 rounded-full text-[9px] font-bold uppercase mb-4">Salin Rekening</button>
+                <hr class="border-gold/20 my-4">
                 <p class="text-[10px] text-darkGold font-bold tracking-widest mb-1">DANA</p>
                 <p class="text-lg font-bold text-gray-800">081375382218</p>
                 <p class="text-[10px] text-gray-500 mb-4">a.n Nabila Iffany Ritonga</p>
-                <button onclick="copyRekening()" class="bg-darkGold text-white px-6 py-2 rounded-full text-[9px] font-bold uppercase">Salin Rekening</button>
+                <button onclick="copyRekening('081375382218')" class="bg-darkGold text-white px-6 py-2 rounded-full text-[9px] font-bold uppercase">Salin Nomor DANA</button>
                 <p id="copyMsg" class="text-[8px] text-green-600 font-bold mt-2 hidden italic">BERHASIL DISALIN!</p>
             </div>
         </div>
     </div>
 
     <script>
-        // INISIALISASI AOS
         AOS.init({ duration: 1000, once: true });
 
         let isPlaying = false;
+        let audioCtx;
         const music = document.getElementById('bgMusic');
 
-        function openInvitation() {
-            // Animasi Sampul Menghilang ke Atas
+        // FUNGSI UTAMA BUKA UNDANGAN
+        async function openInvitation() {
+            // 1. Animasi
             document.getElementById('overlayer').style.transform = 'translateY(-100%)';
             document.getElementById('overlayer').style.opacity = '0';
             
             setTimeout(() => {
                 document.getElementById('overlayer').style.display = 'none';
-                document.body.style.overflowY = 'auto'; // Aktifkan scroll
+                document.body.style.overflowY = 'auto';
                 document.getElementById('musicBtn').classList.remove('hidden');
                 document.getElementById('giftBtn').classList.remove('hidden');
             }, 1000);
 
-            // PUTAR MUSIK OTOMATIS
+            // 2. Web Audio API Resume (PENTING UNTUK HP)
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                await audioCtx.resume();
+            }
+
+            // 3. Play Music
+            playMusic();
+        }
+
+        function playMusic() {
             music.play().then(() => {
                 isPlaying = true;
                 document.getElementById('musicIcon').className = 'fa fa-pause';
             }).catch(e => {
-                console.log("Browser memblokir autoplay, tunggu interaksi.");
+                // Jika masih gagal, paksa play saat user klik layar mana saja
+                const handleForce = () => {
+                    music.play();
+                    isPlaying = true;
+                    document.getElementById('musicIcon').className = 'fa fa-pause';
+                    document.removeEventListener('click', handleForce);
+                };
+                document.addEventListener('click', handleForce);
             });
         }
 
-        // Ambil Nama Tamu dari URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const guest = urlParams.get('to');
-        if (guest) document.getElementById('guestName').innerText = guest.replace(/\+/g, ' ');
-
-        // Kontrol Tombol Musik
-        document.getElementById('musicBtn').addEventListener('click', () => {
+        // Kontrol Musik Manual
+        document.getElementById('musicBtn').addEventListener('click', (e) => {
+            e.stopPropagation();
             if (isPlaying) { 
                 music.pause(); 
                 document.getElementById('musicIcon').className = 'fa fa-music'; 
@@ -278,6 +263,35 @@
             }
             isPlaying = !isPlaying;
         });
+
+        // Nama Tamu
+        const urlParams = new URLSearchParams(window.location.search);
+        const guest = urlParams.get('to');
+        if (guest) document.getElementById('guestName').innerText = guest.replace(/\+/g, ' ');
+
+        // Salin Rekening
+        function copyRekening(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const msg = document.getElementById('copyMsg');
+                msg.classList.remove('hidden');
+                setTimeout(() => msg.classList.add('hidden'), 2000);
+            });
+        }
+
+        function closeModal() { document.getElementById('modalAmplop').classList.add('hidden'); }
+
+        // Countdown
+        const targetDate = new Date("July 11, 2026 08:00:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+            if (gap > 0) {
+                document.getElementById("hari").innerText = Math.floor(gap / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+                document.getElementById("jam").innerText = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+                document.getElementById("menit").innerText = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+                document.getElementById("detik").innerText = Math.floor((gap % (1000 * 60)) / 1000).toString().padStart(2, '0');
+            }
+        }, 1000);
 
         // Form Ucapan
         document.getElementById('wishForm').addEventListener('submit', (e) => {
@@ -291,30 +305,6 @@
             document.getElementById('wishList').insertAdjacentHTML('afterbegin', newWish);
             document.getElementById('wishForm').reset();
         });
-
-        // Modal Kado
-        document.getElementById('giftBtn').addEventListener('click', () => document.getElementById('modalAmplop').classList.remove('hidden'));
-        function closeModal() { document.getElementById('modalAmplop').classList.add('hidden'); }
-        function copyRekening() {
-            navigator.clipboard.writeText("069401030950507").then(() => {
-                const msg = document.getElementById('copyMsg');
-                msg.classList.remove('hidden');
-                setTimeout(() => msg.classList.add('hidden'), 2000);
-            });
-        }
-
-        // Countdown Waktu
-        const targetDate = new Date("July 11, 2026 08:00:00").getTime();
-        setInterval(() => {
-            const now = new Date().getTime();
-            const gap = targetDate - now;
-            if (gap > 0) {
-                document.getElementById("hari").innerText = Math.floor(gap / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-                document.getElementById("jam").innerText = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
-                document.getElementById("menit").innerText = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
-                document.getElementById("detik").innerText = Math.floor((gap % (1000 * 60)) / 1000).toString().padStart(2, '0');
-            }
-        }, 1000);
     </script>
 </body>
 </html>
